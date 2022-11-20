@@ -13,7 +13,7 @@ for file in file_list:
 # create a new dataframe to store the
 excl_merged = pd.DataFrame()
 
-excl_merged[]
+
 for excl_file in excl_list:
 	excl_merged = excl_merged.append(excl_file, ignore_index=True)
 
