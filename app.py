@@ -28,5 +28,8 @@ excl_merged.to_excel(r'C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoap
 df1 = pd.read_excel(r"C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoappend.xlsx",skiprows=5)
 df1 = df1.iloc[: , 3:]
 df1.to_excel(r'C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoappend_final.xlsx')
+st.write(df1)
 df2 = pd.read_excel(r"C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoappend_final.xlsx")
-st.write(df2)
+grouper12 = df1.groupby(['Item Group','Item Code','Proc Group','Description','Colour Size'])
+stylereco = grouper12['Tot Req','Order Qty','GRN Qty','PUT Qty','REC in Qty','REC out Qty','MO Issue Quantity','RO Issue Quantity','Balance Qty','Balance Value'].sum().reset_index()
+
