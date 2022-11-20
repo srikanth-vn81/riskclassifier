@@ -25,4 +25,16 @@ else:
 
        )
 
+excl_merged = excl_merged.iloc[: , 3:]
+
+excl_merged[]
+
+df1=pd.read_excel(excl_merged)
+df1.to_excel(r'C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoappend_final.xlsx')
+
+df2 = pd.read_excel(r"C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoappend_final.xlsx")
+
+grouper12 = excl_merged.groupby(['Item Group','Item Code','Proc Group','Description','Colour Size'])
+
+stylereco = grouper12['Tot Req','Order Qty','GRN Qty','PUT Qty','REC in Qty','REC out Qty','MO Issue Quantity','RO Issue Quantity','Balance Qty','Balance Value'].sum().reset_index()
 
