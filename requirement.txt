@@ -1,2 +1,3 @@
 streamlit
 pandas
+openpyxl @ file:///tmp/build/80754af9/openpyxl_1615411699337/work
