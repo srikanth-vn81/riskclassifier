@@ -27,3 +27,4 @@ excl_merged.to_excel(r'C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoap
 df1 = pd.read_excel(r"C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoappend.xlsx",skiprows=5)
 excl_merged = excl_merged.iloc[: , 3:]
 excl_merged[]
+df1=pd.read_excel(excl_merged)
