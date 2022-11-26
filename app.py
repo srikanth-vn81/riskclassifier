@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 
 uploaded_file = st.file_uploader(
-        "",accept_multiple_files=True
-        key="1",
+        "",accept_multiple_files=True,
+       
         help="To activate 'wide mode', go to the hamburger menu > Settings > turn on 'wide mode'",
     )
 
