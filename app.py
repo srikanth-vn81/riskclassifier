@@ -22,7 +22,7 @@ else:
                 👆 Upload a .xlsx file)
                 """
 
-        #)
+        )
 
 	st.stop()
 
