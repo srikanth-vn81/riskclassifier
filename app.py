@@ -18,7 +18,7 @@ if uploaded_file is not None:
 	excl_list = []
 	
 	for uploaded_file in file_list:
-#     		excl_list.append(pd.read_excel(uploaded_file))
+    		excl_list.append(pd.read_excel(uploaded_file))
 		
 else:
 	st.info(
