@@ -15,7 +15,11 @@ if uploaded_file is not None:
 	head = df.head()
 	st.write(head)
 	
+	excl_list = []
 	
+	for uploaded_file in file_list:
+#     		excl_list.append(pd.read_excel(uploaded_file))
+		
 else:
 	st.info(
             f"""
