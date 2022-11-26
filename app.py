@@ -22,7 +22,7 @@ else:
 
 excl_merged = excl_merged.iloc[: , 3:]
 
-excl_merged[]
+#excl_merged[]
 
 df1=pd.read_excel(excl_merged)
 
