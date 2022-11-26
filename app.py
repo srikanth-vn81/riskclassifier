@@ -5,7 +5,7 @@ if uploaded_file is not None:
         #file_container = st.expander("Check your uploaded .excel")
         shows = pd.read_excel(uploaded_file)
         uploaded_file.seek(0)
-        #file_container.write(shows)
+        st.write(shows)
 else:
         st.info(
             f"""
