@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 uploaded_file = st.file_uploader(
         "Choose stylereco file",accept_multiple_files=True
-        key="1",
+        key=None,
         help="To activate 'wide mode', go to the hamburger menu > Settings > turn on 'wide mode'",
     )
 if uploaded_file is not None:
