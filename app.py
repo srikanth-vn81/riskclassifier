@@ -25,6 +25,7 @@ else:
 
        )
 excl_merged.to_excel(r'C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoappend.xlsx')
+st.dataframe(excl_merged)
 
 
 #df1.to_excel(r'C:\Users\srikanthve\Desktop\Style Reco Output\stylerecoappend_final.xlsx')
