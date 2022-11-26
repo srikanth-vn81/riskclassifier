@@ -6,10 +6,10 @@ uploaded_file = st.file_uploader(
         help="To activate 'wide mode', go to the hamburger menu > Settings > turn on 'wide mode'",
     )
 if uploaded_file is not None:
-        file_container = st.expander("Check your uploaded .excel")
+        #file_container = st.expander("Check your uploaded .excel")
         shows = pd.read_excel(uploaded_file)
         uploaded_file.seek(0)
-        file_container.write(shows)
+        #file_container.write(shows)
 else:
         st.info(
             f"""
